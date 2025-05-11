@@ -1,0 +1,99 @@
+/* Custom styles beyond Tailwind */
+.rank-badge-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 20px;
+    position: relative; /* For potential badge layering */
+}
+
+.rank-number {
+    font-size: 1.2em;
+    color: white;
+}
+
+/* Rank specific styles with gradients and shadows */
+.rank-1-bg {
+    background: linear-gradient(45deg, #FFD700, #FFA500); /* Gold gradient */
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.4);
+}
+
+.rank-2-bg {
+    background: linear-gradient(45deg, #C0C0C0, #A9A9A9); /* Silver gradient */
+    box-shadow: 0 4px 8px rgba(192, 192, 192, 0.4);
+}
+
+.rank-3-bg {
+    background: linear-gradient(45deg, #CD7F32, #B87333); /* Bronze gradient */
+    box-shadow: 0 4px 8px rgba(205, 127, 50, 0.4);
+}
+
+.progress-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.progress-label {
+    font-weight: font-semibold;
+    margin-right: 2px;
+    color: text-gray-700;
+    /* ... other styles ... */
+}
+
+.progress-bar-container {
+    background-color: #e0e0e0;
+    border-radius: 5px; /* Slightly less rounded */
+    height: 16px; /* Thicker bar */
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #4CAF50; /* Green progress color */
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+.badge {
+    padding: 0.5rem 1rem; /* Increased padding */
+    border-radius: 0.5rem; /* Slightly larger border-radius */
+    font-size: 1.1rem; /* Increased font size */
+    font-weight: 600;
+    margin-left: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gold-badge {
+    background-color: #facc15; /* Tailwind 'yellow-400' */
+    color: #374151; /* Tailwind 'gray-800' */
+}
+
+.silver-badge {
+    background-color: #d4d4d8; /* Tailwind 'gray-300' */
+    color: #374151;
+}
+
+.bronze-badge {
+    background-color: #f472b6; /* Tailwind 'pink-400' */
+    color: white;
+}
+
+.progress-container .text-gray-600 { /* Style the score text */
+    font-size: 1.2rem; /* Increased font size */
+    font-weight: bold; /* Make it bold */
+    margin-left: 10px; /* Add a bit more space from the bar */
+    color: #555; /* Slightly darker color for better visibility */
+}
+
+/* Add a subtle animation for list items on hover */
+#studentList li:hover {
+    background-color: #f9f9f9;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
